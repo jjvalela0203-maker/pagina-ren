@@ -64,36 +64,6 @@ h1 {
 .description {
     color: #ff1515
 }
-.habilidades {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 1.5rem;
-}
-
-.tag {
-    background-color: #fa0e0e;
-    color: black;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    position: relative; 
-    cursor: pointer;
-}
-
-.tag img {
-    position: absolute;   
-    bottom: 120%;        
-    left: 50%;
-    transform: translateX(-50%); 
-    width: 854px;         
-    height: 480px;
-    border-radius: 10px;
-    border: none;
-    display: none;       
-    z-index: 10;         
-    object-fit: cover;
-}
 
 .tag:hover img {
     display: block;
