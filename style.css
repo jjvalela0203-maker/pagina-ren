@@ -15,21 +15,27 @@ body {
     min-height: 100vh;
 }
 
+.contenedor-principal {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+    padding: 20px;
+    gap: 20px; 
+}
 
 .tarjeta {
     background-color: black;
-    width: 350px;
+    flex: 1; 
+    max-width: 350px;
     padding: 2rem;
     border-radius: 50px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s ease;
 }
-
-
-.tarjeta:hover {
-    transform: translateY(-10px);
-}
+.tarjeta:hover { transform: translateY(-10px); }
 
 .foto-perfil {
     width: 150px;
@@ -83,7 +89,7 @@ h1 {
     width: 854px;         
     height: 480px;
     border-radius: 10px;
-    border: 2px solid white;
+    border: none;
     display: none;       
     z-index: 10;         
     object-fit: cover;
@@ -103,10 +109,7 @@ h1 {
     cursor: pointer;
     width: 100%;
 }
-
-.btn-contacto:active {
-    background-color: #e53835d7;
-}
+.btn-contacto:active { background-color: #e53835d7; }
 
 .btn-favpage {
     margin-top: 2rem;
@@ -116,5 +119,7 @@ h1 {
     padding: 10px 30px;
     border-radius: 50px;
     cursor: pointer;
-    width: 100%
+    width: 100%;
 }
+
+.btn-favpage:active { background-color: #e53835d7; }
