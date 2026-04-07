@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e330308a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.tarjeta {
+    background-color: black;
+    width: 350px;
+    padding: 2rem;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    background-color: #ff0d00f4;
+    border-radius: 50%; 
+    background-image: url("9f1c345f24bbb6e1c33bdb6ca2ede122.jpg");
+    background-position: center;
+    background-size:cover;
+    margin: 0 auto 1rem;
+}
+
+h1 {
+    color: #ff1515;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+    color: #ff1515;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+.description {
+    color: #ff1515
+}
+.habilidades {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.tag {
+    background-color: #fa0e0e;
+    color: black;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    position: relative; 
+    cursor: pointer;
+}
+
+.tag img {
+    position: absolute;   
+    bottom: 120%;        
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 854px;         
+    height: 480px;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: none;       
+    z-index: 10;         
+    object-fit: cover;
+}
+
+.tag:hover img {
+    display: block;
+}
+
+.btn-contacto {
+    margin-top: 2rem;
+    background-color: #e71814d7;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-contacto:active {
+    background-color: #e53835d7;
+}
+
+.btn-favpage {
+    margin-top: 2rem;
+    background-color: #e71814d7;
+    color: black;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%
+}
