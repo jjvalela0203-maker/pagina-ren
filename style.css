@@ -8,11 +8,25 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e330308a;
+    background-image: url("https://thumbs.dreamstime.com/b/teatro-griego-antiguo-con-vistas-al-mar-mediterr%C3%A1neo-un-bien-conservado-sillas-de-piedra-y-ruinas-arcos-frente-impresionante-394868328.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0ac4f2c4;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
+}
+
+.titulo {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #fffdfd;
 }
 
 .contenedor-principal {
@@ -26,7 +40,7 @@ body {
 }
 
 .tarjeta {
-    background-color: black;
+    background-color: rgba(22, 111, 243, 0.995);
     flex: 1; 
     max-width: 350px;
     padding: 2rem;
@@ -40,29 +54,28 @@ body {
 .foto-perfil {
     width: 150px;
     height: 150px;
-    background-color: #ff0d00f4;
+    background-color: #fdfdfdf4;
     border-radius: 50%; 
-    background-image: url("9f1c345f24bbb6e1c33bdb6ca2ede122.jpg");
     background-position: center;
     background-size:cover;
     margin: 0 auto 1rem;
 }
 
 h1 {
-    color: #ff1515;
+    color: #fbfbfb;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
 .subtitulo {
-    color: #ff1515;
+    color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
 .description {
-    color: #ff1515
+    color: #fdf9f9
 }
 
 .tag:hover img {
@@ -71,20 +84,20 @@ h1 {
 
 .btn-contacto {
     margin-top: 2rem;
-    background-color: #e71814d7;
-    color: black;
+    background-color: #145ae7d7;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
     width: 100%;
 }
-.btn-contacto:active { background-color: #e53835d7; }
+.btn-contacto:active { background-color: #5b9ff3d7; }
 
 .btn-favpage {
-    margin-top: 2rem;
-    background-color: #e71814d7;
-    color: black;
+    margin-top: 1rem;
+    background-color: #145ae7d7;
+    color: white;
     border: none;
     padding: 10px 30px;
     border-radius: 50px;
@@ -92,4 +105,27 @@ h1 {
     width: 100%;
 }
 
-.btn-favpage:active { background-color: #e53835d7; }
+.btn-favpage:active { background-color: #5b9ff3d7; }
+
+.page-footer {
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(22, 111, 243, 0.995);
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+}
+
+.page-footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.page-footer a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+}
