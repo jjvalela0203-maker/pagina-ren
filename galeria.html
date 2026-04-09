@@ -4,4 +4,83 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Galeria de imagenes</title>
+        <link rel="stylesheet" href="style.css">
     </head>
+<body class="body-galeria">
+    <div class="contenedor-galeria-layout">
+        <!-- Menú Lateral -->
+        <aside class="sidebar">
+            <h2 class="titulo-galeria">Galería de imágenes</h2>
+            <nav class="menu-galeria">
+                <ul>
+                    <li><a href="presentacion.html" class="btn-regresar">← Regresar a Inicio</a></li>
+                    <hr>
+                    <li><a href="#aristoteles">Aristóteles</a></li>
+                    <li><a href="#platon">Platón</a></li>
+                    <li><a href="#socrates">Sócrates</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido de la Galería -->
+        <main class="contenido-galeria">
+            <!-- Sección Aristóteles -->
+            <section id="aristoteles" class="seccion-filosofo">
+                <h2>Aristóteles</h2>
+                <div class="grid-fotos">
+                    <figure>
+                        <div class="foto-item" style="background-image: url('aristoteles-enseñando.png');"></div>
+                        <figcaption>Aristóteles enseñando en el Liceo de Atenas.</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="foto-item" style="background-image: url('https://www.lavanguardia.com/files/content_image_desktop_filter/files/fp/uploads/2025/03/26/67e4351b80a72.r_d.247-209.jpeg');"></div>
+                        <figcaption>Busto antiguo de Aristóteles conservado en el Museo Altemps.</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="foto-item" style="background-image: url('aristoteles-logica.png');"></div>
+                        <figcaption>Representación de sus estudios sobre la lógica y la naturaleza.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Sección Platón -->
+            <section id="platon" class="seccion-filosofo">
+                <h2>Platón</h2>
+                <div class="grid-fotos">
+                    <figure>
+                        <div class="foto-item" style="background-image: url('platon-academia.jpg');"></div>
+                        <figcaption>Mosaico que representa la Academia fundada por Platón.</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="foto-item" style="background-image: url('platon-caverna.png');"></div>
+                        <figcaption>Ilustración de la Alegoría de la Caverna.</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="foto-item" style="background-image: url('platon-estatua.jpg');"></div>
+                        <figcaption>Estatua clásica del filósofo de la teoría de las ideas.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Sección Sócrates -->
+            <section id="socrates" class="seccion-filosofo">
+                <h2>Sócrates</h2>
+                <div class="grid-fotos">
+                    <figure>
+                        <div class="foto-item" style="background-image: url('https://via.placeholder.com/300x200');"></div>
+                        <figcaption>Sócrates debatiendo con los ciudadanos en el ágora.</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="foto-item" style="background-image: url('https://via.placeholder.com/300x200');"></div>
+                        <figcaption>Representación del juicio y muerte de Sócrates.</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="foto-item" style="background-image: url('https://via.placeholder.com/300x200');"></div>
+                        <figcaption>Busto que captura la expresión característica del maestro de Platón.</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -8,19 +8,28 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("https://thumbs.dreamstime.com/b/teatro-griego-antiguo-con-vistas-al-mar-mediterr%C3%A1neo-un-bien-conservado-sillas-de-piedra-y-ruinas-arcos-frente-impresionante-394868328.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.body-presentacion {
+    background-image: url("https://thumbs.dreamstime.com/b/teatro-griego-antiguo-con-vistas-al-mar-mediterr%C3%A1neo-un-bien-conservado-sillas-de-piedra-y-ruinas-arcos-frente-impresionante-394868328.jpg");
     background-color: #0ac4f2c4;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    min-height: 100vh;
-    padding: 0;
 }
+
+.body-galeria {
+    background-image: url("https://images.unsplash.com/photo-1491841573634-28140fc7ced7?q=80&w=2070&auto=format&fit=crop");
+    background-color: #0d47a1;
+}
+
 .page-header {
     width: 100%;
     background-color: #166FF3FE;
@@ -159,4 +168,94 @@ h1 {
     color: #ffffff;
     font-weight: bold;
     text-decoration: underline;
+}
+
+
+.contenedor-galeria-layout {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #166FF3FE;
+    color: white;
+    padding: 2rem 1.5rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+}
+
+.titulo-galeria {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.menu-galeria ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-galeria li {
+    margin: 1.2rem 0;
+}
+
+.menu-galeria a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu-galeria a:hover {
+    color: #ffd700;
+    padding-left: 5px;
+}
+
+.btn-regresar {
+    display: inline-block;
+    background-color: white;
+    color: #166FF3FE !important;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.contenido-galeria {
+    margin-left: 250px; /* Espacio para no quedar debajo del sidebar */
+    padding: 3rem;
+    width: 100%;
+}
+
+.seccion-filosofo {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 25px;
+    margin-bottom: 4rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.foto-item {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #333;
+    font-style: italic;
 }
